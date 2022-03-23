@@ -7,7 +7,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.weather-container {
+  text-align: center;
+}
+
+.weather-container > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.weather-container > ul > li{
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+.weather-icon > h2{
+  text-transform: capitalize;
 }

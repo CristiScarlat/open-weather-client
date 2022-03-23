@@ -6,10 +6,13 @@ const instance = axios.create({
 })
 
 const getCurrentWeather = async (city, units) => {
-    const res = await instance.get(`/weather?q=${city}&units=${units}&appid=${process.env.REACT_APP_API_KEY}`);
-    return res;
+    try{
+        const res = await instance.get(`/weather?q=${city}&units=${units}&appid=${process.env.REACT_APP_API_KEY}`);
+        return res;
+    } catch(error){
+        throw new Error("Failed get current weather");
+    }
+
 }
-
-
 
 export { getCurrentWeather }

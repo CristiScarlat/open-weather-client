@@ -1,11 +1,17 @@
 .header-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     min-height: 3rem;
     border: 1px solid black;
     padding: 0 1rem;
     background: #000000eb;
     color: green;
+}
+
+.header-links-container {
+    display: flex;
+    align-items: center;
 }
 
 .header-links {
@@ -16,4 +22,23 @@
 
 .header-links a{
     text-decoration: none;
+}
+
+.header-get-weather-container {
+    height: 2rem;
+    padding: 0.5rem;
+}
+
+.header-get-weather-container > button {
+    min-height: 2rem;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background: #2e722f;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+.header-get-weather-container > input {
+    height: 1.5rem;
 }
